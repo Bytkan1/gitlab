@@ -9,7 +9,7 @@ vector<string> fileread(const string& filename) {
     vector<string> stroki;
     ifstream file(filename);
     if (file.is_open()) {
-        cout << "ok" << endl;
+        cout << "Open is ok!" << endl;
         string stroka;
         while (getline(file, stroka)) {
             stroki.push_back(stroka);
@@ -28,8 +28,9 @@ void vyvod(const vector<string>& stroki) {
     }
 }
 
+
+
 int main() {
-    string filename = "my_file.txt";
+    string filename = "1.3.txt";
     vector<string> mystroki = fileread(filename);
-    vyvod(mystroki);
     return 0;}
