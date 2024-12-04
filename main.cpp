@@ -21,12 +21,6 @@ vector<string> fileread(const string& filename) {
     return stroki;
 }
 
-void vyvod(const vector<string>& stroki) {
-    size_t sizet = stroki.size();
-    for (size_t i = 0; i < sizet; i++) {
-        cout << stroki[i] << endl;
-    }
-}
 
 
 
