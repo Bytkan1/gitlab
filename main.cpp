@@ -13,6 +13,7 @@ vector<string> fileread(const string& filename) {
         string stroka;
 
 
+
 void vyvod(const vector<string>& stroki) {
     if (stroki.empty()) {
         cout<<"File empty"<<endl;
@@ -22,8 +23,10 @@ void vyvod(const vector<string>& stroki) {
     }
 }
 
+
+
+
 int main() {
     string filename = "1.3.txt";
     vector<string> mystroki = fileread(filename);
-    vyvod(mystroki);
     return 0;}
