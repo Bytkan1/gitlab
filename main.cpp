@@ -11,14 +11,16 @@ vector<string> fileread(const string& filename) {
     if (file.is_open()) {
         cout << "Open is ok!" << endl;
         string stroka;
-        while (getline(file, stroka)) {
-            stroki.push_back(stroka);
-        }
-        file.close();
-    } else {
-        cout << "error" << endl;
+
+
+
+void vyvod(const vector<string>& stroki) {
+    if (stroki.empty()) {
+        cout<<"File empty"<<endl;
     }
-    return stroki;
+    for (const string& stroka : stroki) {
+        cout << stroka << '\n';
+    }
 }
 
 
