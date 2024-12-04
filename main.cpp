@@ -22,9 +22,11 @@ vector<string> fileread(const string& filename) {
 }
 
 void vyvod(const vector<string>& stroki) {
-    size_t sizet = stroki.size();
-    for (size_t i = 0; i < sizet; i++) {
-        cout << stroki[i] << endl;
+    if (stroki.empty()) {
+        cout<<"File empty"<<endl;
+    }
+    for (const string& stroka : stroki) {
+        cout << stroka << '\n';
     }
 }
 
